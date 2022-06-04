@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>AppKit BootStrap</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../fonts/css/fontawesome-all.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../app/icons/icon-192x192.png" />
+</head>
+
+<body class="" data-highlight="highlight-red">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-main.html">
+        </div>
+        <div class=" py-3 d-flex justify-content-between align-items-center px-3  ">
+            <!-- <h1> Appkit </h1> -->
+            <div class="flex-fill d-flex align-items-center">
+                <a href="completed-projects.html" class="page-title-icon bg-theme ">
+                    <i class="fa-solid text-primary fa-arrow-left font-18"></i>
+                </a>
+                <span class=" font-18 font-600 text-black">2h Cleaner</span>
+            </div>
+
+            <div class="flex-fill d-flex justify-content-end"> </div>
+        </div>
+
+        <div class="page-content pb-0">
+            <div class="container-fluid">
+
+                <div class="col-12">
+                    <div class="card card-style bg-theme pb-0">
+                        <div class="content" id="tab-group-1">
+                            <div class="tab-controls tabs-small tabs-rounded" data-highlight="bg-highlight">
+                                <a href="#"
+                                    class="w-75 text-black bg-default font-15  rounded-xl mx-1 my-1 py-2 px-1 lh-sm font-500"
+                                    data-active data-bs-toggle="collapse" data-bs-target="#overview">Overview
+                                </a>
+                                <a href="#"
+                                    class="w-75 text-black bg-default font-15  rounded-xl mx-1 my-1 py-2 px-1 lh-sm font-500"
+                                    data-bs-toggle="collapse" data-bs-target="#todo-list"> To-Do-List</a>
+                            </div>
+                            <div class="clearfix mb-3"></div>
+                            <div data-bs-parent="#tab-group-1" class="collapse show" id="overview">
+                                <div class="row mb-3">
+                                    <div class="col-7 d-flex align-items-center">
+                                        <span class="font-17 font-600 text-black align-middle">Project Intro</span>
+                                    </div>
+                                    <div class="col-5">
+                                        <div id="header-icon-2-group">
+                                            <button type="button" id="on-track" data-bs-toggle="dropdown"
+                                                class="float-end btn btn-xxs btn-full mb-3 rounded-xl text-capitalize font-700 shadow-s bg-primary"
+                                                aria-expanded="false">
+                                                on track
+                                                <i class="ms-1 text-white font-16 fas fa-caret-down"></i>
+                                            </button>
+                                            <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2"
+                                                aria-labelledby="on-track">
+                                                <div class="list-group list-custom-small px-3">
+                                                    <a href="#" class="lh-1 py-2">
+                                                        <span>On Track</span>
+                                                    </a>
+                                                    <a href="#" class="lh-1 py-2">
+                                                        <span>On Hold</span>
+                                                    </a>
+                                                    <a href="#" class="lh-1 py-2">
+                                                        <span>Complete</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class=" color-dark-light font-14">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit consectetur
+                                            adipisicing elit. Soluta sunt nam eveniet. Soluta sunt nam eveniet.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row mb-0">
+                                    <div class="col-7 d-flex align-items-center mt-2">
+                                        <span class="font-17 font-600 text-black align-middle">Users</span>
+                                    </div>
+                                    <div class="col-5 mt-2">
+                                        <a href="#"
+                                            class="float-end btn btn-border color-blue-light border-blue-light btn-xxs btn-full rounded-xl text-capitalize font-500 shadow-s ">
+                                            <i class="fas fa-plus-circle "></i>
+                                            Add Member
+                                        </a>
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <div class="row mb-0">
+                                            <div class="col-2 text-center">
+                                                <img data-menu="project-profile" src="../images/avatars/9xs.png"
+                                                    class="img-fluid rounded-circle" height="50" width='50'>
+                                            </div>
+                                            <div class="col-10 ps-0">
+                                                <div class="row mb-0">
+                                                    <div class="col-12">
+                                                        <p class="text-warning font-600 mb-n2 ">High</p>
+                                                        <h1 class="font-20">Awdhesh Bais
+                                                        </h1>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <span class="align-middle">
+                                                            <i class="text-primary fa-fw select-all fas pe-2"></i>
+                                                            UI Designer
+                                                        </span> <br>
+                                                        <span class="">
+                                                            <i class="text-primary fas fa-check-circle"></i>
+                                                            &nbsp;Status: Doing <br>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <span class="ms-2">
+                                                            Total Expenses:
+                                                            <b class="text-primary">
+                                                                $198
+                                                            </b>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2 ">
+                                                    <div class="col-12">
+                                                        <div class="m-0 font-13  font-600 text-black">
+                                                            <i class="text-primary fas fa-clock pe-1"></i> Work
+                                                            Hours
+                                                        </div>
+                                                        <div class="d-flex  ">
+                                                            <span>Yesterday: 2.5 Hrs</span> <span class="mx-2">|</span>
+                                                            <span>This Week: 9 hrs </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-0">
+                                            <div class="col-2 text-center">
+                                                <img data-menu="project-profile" src="../images/avatars/8xs.png"
+                                                    class="img-fluid rounded-circle" height="50" width='50'>
+                                            </div>
+                                            <div class="col-10 ps-0">
+                                                <div class="row mb-0">
+                                                    <div class="col-12">
+                                                        <p class="text-warning font-600 mb-n2 d-none">High</p>
+                                                        <h1 class="font-20">Raja Kuma
+                                                        </h1>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <span class="align-middle">
+                                                            <i class="text-primary fa-fw select-all fas pe-2"></i>
+                                                            UI Designer
+                                                        </span> <br>
+                                                        <span class="">
+                                                            <i class="text-primary fas fa-check-circle"></i>
+                                                            &nbsp;Status: Done <br>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <span class="ms-2">
+                                                            Total Expenses:
+                                                            <b class="text-primary">
+                                                                $130
+                                                            </b>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2 ">
+                                                    <div class="col-12">
+                                                        <div class="m-0 font-13  font-600 text-black">
+                                                            <i class="text-primary fas fa-clock pe-1"></i> Work
+                                                            Hours
+                                                        </div>
+                                                        <div class="d-flex  ">
+                                                            <span>Yesterday: 2.5 Hrs</span> <span class="mx-2">|</span>
+                                                            <span>This Week: 9 hrs </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-0">
+                                            <div class="col-2 text-center">
+                                                <img data-menu="project-profile" src="../images/avatars/7xs.png"
+                                                    class="img-fluid rounded-circle" height="50" width='50'>
+                                            </div>
+                                            <div class="col-10 ps-0">
+                                                <div class="row mb-0">
+                                                    <div class="col-12">
+                                                        <p class="text-warning font-600 mb-n2 d-none">High</p>
+                                                        <h1 class="font-20"> Kumar Anand
+                                                        </h1>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <span class="align-middle">
+                                                            <i class="text-primary fa-fw select-all fas pe-2"></i>
+                                                            Frontend
+                                                        </span> <br>
+                                                        <span class="">
+                                                            <i class="text-primary fas fa-check-circle"></i>
+                                                            &nbsp;Status: To-Do <br>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <span class="ms-2">
+                                                            Total Expenses:
+                                                            <b class="text-primary">
+                                                                $130
+                                                            </b>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2 ">
+                                                    <div class="col-12">
+                                                        <div class="m-0 font-13  font-600 text-black">
+                                                            <i class="text-primary fas fa-clock pe-1"></i> Work
+                                                            Hours
+                                                        </div>
+                                                        <div class="d-flex  ">
+                                                            <span>Yesterday: 2.5 Hrs</span> <span class="mx-2">|</span>
+                                                            <span>This Week: 9 hrs </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row mb-0">
+                                            <div class="col-2 text-center">
+                                                <img data-menu="project-profile" src="../images/avatars/6xs.png"
+                                                    class="img-fluid rounded-circle" height="50" width='50'>
+                                            </div>
+                                            <div class="col-10 ps-0">
+                                                <div class="row mb-0">
+                                                    <div class="col-12">
+                                                        <p class="text-warning font-600 mb-n2 d-none">High</p>
+                                                        <h1 class="font-20">Arpit Rathor
+                                                        </h1>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row mb-0">
+                                                    <div class="col-6">
+                                                        <span class="align-middle">
+                                                            <i class="text-primary fa-fw select-all fas pe-2"></i>
+                                                            Backend Developer
+                                                        </span> <br>
+                                                        <span class="">
+                                                            <i class="text-primary fas fa-check-circle"></i>
+                                                            &nbsp;Status: To-Do <br>
+                                                        </span>
+
+                                                    </div>
+                                                    <div class="col-6 text-end">
+                                                        <span class="ms-2">
+                                                            Total Expenses:
+                                                            <b class="text-primary">
+                                                                $130
+                                                            </b>
+                                                        </span>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mt-2 ">
+                                                    <div class="col-12">
+                                                        <div class="m-0 font-13  font-600 text-black">
+                                                            <i class="text-primary fas fa-clock pe-1"></i> Work
+                                                            Hours
+                                                        </div>
+                                                        <div class="d-flex  ">
+                                                            <span>Yesterday: 2.5 Hrs</span> <span class="mx-2">|</span>
+                                                            <span>This Week: 9 hrs </span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-bs-parent="#tab-group-1" class="collapse" id="todo-list">
+                                <div class="accordion mt-2" id="accordion-1">
+                                    <div class="row mb-3">
+                                        <div class="col-7 d-flex align-items-center mt-2">
+                                            <a data-menu="add-to-do" href="#"
+                                                class="float-end btn btn-border w-75 color-blue-light border-blue-light btn-xxs btn-full rounded-xl text-capitalize font-500 shadow-s ">
+                                                <i class="fas fa-plus-circle "></i>
+                                                Add To-Do
+                                            </a>
+                                        </div>
+                                        <div class="col-5 mt-2 justify-content-end d-flex align-items-center">                                           
+                                            <a href="#"
+                                                class="d-flex justify-content-center btn w-25 btn-xxs btn-full rounded-xl text-uppercase font-700 shadow-s bg-red-light">
+                                                <i class="fas fa-trash-alt text-white font-14 float-end"></i> 
+                                            </a>
+                                        </div>
+                                        <div class="col-12 mt-3 px-3">
+                                            <p class="font-15 font-600 text-black my-2">Wireframing</p>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check1"
+                                                    checked="">
+                                                <label class="form-check-label" for="check1">Task 1</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check2"
+                                                    checked="">
+                                                <label class="form-check-label" for="check2">Task 2</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check3"
+                                                    checked="">
+                                                <label class="form-check-label" for="check3">Task 3</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check4"
+                                                    checked="">
+                                                <label class="form-check-label" for="check4">Task 4</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 mt-3 px-3">
+                                            <p class="font-15 font-600 text-black my-2">Frontend</p>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check8"
+                                                    checked="">
+                                                <label class="form-check-label" for="check8">Task 1</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check5"
+                                                    checked="">
+                                                <label class="form-check-label" for="check5">Task 2</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check6"
+                                                    checked="">
+                                                <label class="form-check-label" for="check6">Task 3</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check7"
+                                                    checked="">
+                                                <label class="form-check-label" for="check7">Task 4</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 mt-3 px-3">
+                                            <p class="font-15 font-600 text-black my-2">Backend</p>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check9"
+                                                    checked="">
+                                                <label class="form-check-label" for="check9">Task 1</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check10"
+                                                    checked="">
+                                                <label class="form-check-label" for="check10">Task 2</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check11"
+                                                    checked="">
+                                                <label class="form-check-label" for="check11">Task 3</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+                                            <div class="form-check icon-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="check12"
+                                                    checked="">
+                                                <label class="form-check-label" for="check12">Task 4</label>
+                                                <i class="icon-check-1 fa fa-square color-gray-dark font-16"></i>
+                                                <i class="icon-check-2 fa fa-check-square font-16 color-highlight"></i>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add to do modal  -->
+
+            <div id="add-to-do" class="d-flex align-items-center justify-content-center menu bg-white menu-box-modal rounded-m" data-menu-width="350" data-menu-height="330">
+                
+                    <div class="content w-100 px-2 ">
+                        <form action="">
+                            <div class="input-style has-borders no-icon mb-4">
+                                <label for="form5" class="color-highlight">Chose Skills</label>
+                                <select id="form5">
+                                    <option value="default" disabled="" selected="">Select a Skill</option>
+                                    <option value="iOS">HTML</option>
+                                    <option value="Linux">CSS</option>
+                                    <option value="MacOS">JS</option>
+                                </select>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                                <i class="fa fa-check disabled valid color-green-dark"></i>
+                                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                            </div>
+                             
+                            <div class="input-style has-borders no-icon validate-field mb-4">
+                                <input type="url" class="form-control validate-text" id="form44" placeholder="Task Description 1">
+                                <label for="form44" class="color-highlight"></label>
+                                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                <i class="fa fa-check disabled valid color-green-dark"></i>
+                            </div>
+                            <div class="input-style has-borders no-icon validate-field mb-4">
+                                <input type="url" class="form-control validate-text" id="form44" placeholder="Task Description 2">
+                                <label for="form44" class="color-highlight"></label>
+                                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                                <i class="fa fa-check disabled valid color-green-dark"></i>
+                            </div>
+
+                            <div class="col-12 row mt-2 mx-auto mb-2">
+                                <div class="col-6 px-1">
+                                    <a href="#"
+                                        class="btn btn-border mt-3 btn-xxs btn-full mb-3 rounded-xs text-uppercase font-700 border-red-dark color-red-dark bg-theme">
+                                        Cancel
+                                    </a>
+                                </div>
+                                <div class="col-6 px-1">
+                                    <a href="#" class="  btn btn-xxs mt-3 btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                                            bg-primary">
+                                        Done
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                 
+            </div>
+
+            <div id="project-profile"
+                class="card card-style menu menu-box-modal rounded-m p-4 d-flex justify-content-center align-items-center"
+                data-menu-height="200" data-menu-width="290">
+                <div class="row px-3 mb-0 d-flex align-items-center">
+                    <div>
+                        <div class="text-center m-0">
+                            <img data-menu="project-profile" src="../images/avatars/9xs.png"
+                                class="mb-3 img-fluid rounded-circle" height="60" width="60">
+                            <br> <span class='font-15 font-600 text-black'> Arjun Sign</span>
+                        </div>
+                        <div class="">
+                            <span class="font-13 font-600 text-primary">Skills:</span>
+                            <span class="font-13 ">wireframing, visual design, prototyping</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="create-project"
+                class="menu menu-box-modal rounded-m p-4 d-flex justify-content-center align-items-center"
+                data-menu-height="200" data-menu-width="280">
+                <div class="row mb-0 ">
+                    <P class="text-center text-black font-16">
+                        Your project has been created successfull
+                    </P>
+                    <div class="col-6">
+                        <a href="#" class="text-primary border-blue-dark btn-border btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                         ">
+                            ok
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="project-list.html" class=" btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                        bg-primary">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../scripts/bootstrap.min.js">
+        </script>
+        <script type="text/javascript" src="../scripts/custom.js"></script>
+
+</body>
+
+</html>

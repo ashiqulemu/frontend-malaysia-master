@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>AppKit BootStrap</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../fonts/css/fontawesome-all.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../app/icons/icon-192x192.png" />
+</head>
+
+<body class="" data-highlight="highlight-red">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <!-- footer -->
+
+        <!-- <div id="footer-bar" class="footer-bar-6">
+            <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+            <a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+            <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+            <a href="index-projects.html"><i class="fa fa-image"></i><span>Projects</span></a>
+            <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+        </div> -->
+
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-main.html">
+        </div>
+
+        <div class=" py-3 d-flex justify-content-between align-items-center px-1">
+            <!-- <h1> Appkit </h1> -->
+            <div class="flex-fill">
+                <a href="#" class=" page-title-icon   bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-bars font-18"></i>
+                </a>
+            </div>
+
+            <div class="flex-fill d-flex justify-content-end"> 
+
+                <a href="notifications.html" class=" page-title-icon shadow-xl bg-theme color-theme" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class=" text-primary tw-align-bottom" role="img">
+                        <title>Unread Notifications</title>
+                        <g fill="none">
+                            <g>
+                                <path fill="currentColor"
+                                    d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z">
+                                </path>
+                                <circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="text-center page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
+                    <img src="../images/avatars/9xs.png" alt="" class="img-fluid rounded-circle">
+                </a>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container-fluid mt-1">
+                <h3 class="mb-4">User Dashboard</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="index.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100"> 
+
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+
+                                    <p class="color-highlight font-600 mb-n1  font-16">Assignment</p>
+
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+
+                                </div>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4 px-1">
+                        <a href="pending-review.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100">
+
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+
+                                    <p class="color-highlight font-600 mb-n1  font-17">Pending Review</p>
+
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="on-hold.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100">
+
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+
+                                    <p class="color-highlight font-600 mb-n1  font-16">On Hold</p>
+
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row  mb-0">
+                    <div class="col-12">
+                        <div class="card card-style">
+                            <div class="card" data-card-height="250"
+                                style="height: 300px; background:linear-gradient(276deg, #ffbf00, #ffd454)">    
+                                <div class="card-bottom pb-3 pe-3 ps-3">
+                                    <div class="row mb-0">
+                                        <div class="col-6 ">
+                                            <span class="color-white"><i class="fa fa-tag pe-2"></i>
+                                                UI Designer
+                                            </span>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <span class="color-white"><i class="fas fa-clock"></i> 10 Hours</span>
+                                        </div>
+                                        <!-- <div class="col-4 text-start">
+                                            <span class="color-white"><i
+                                                    class="fa fa-calendar pe-2"></i>23-06-2022</span>
+                                        </div> -->
+                                    </div>
+                                </div>
+                                <div class="bg-gradient rounded-0">
+                                    <div class="card-center">
+                                        <h1 class="color-white text-center mb-0 scale-box">Travel</h1> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content mt-n2">
+                                <div class="float-start">
+                                    <p class="text-warning font-600 mb-n1 ">High</p>
+                                   <a href="user-project-details.html">
+                                       <h1>Travel</h1>
+                                  </a>
+                                    
+                                </div>
+                                <div class="float-end mt-2">
+                                    <a href="#"
+                                        class="icon icon-xs bg-theme color-theme shadow-xl rounded-xl ms-2"
+                                        id="submit-hour" data-bs-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-v text-primary"></i>
+                                    </a>
+                                    <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2"
+                                        aria-labelledby="submit-hour">
+    
+                                        <div class="list-group list-custom-small ps-2 pe-2">
+                                            <a href="#" data-menu="review-modal">
+                                                <i
+                                                    class="fa fa-solid fa-circle-check text-primary shadow-0 mx-0"></i>
+                                                <span>Mark for review</span>
+                                            </a>
+                                            <a href="#" data-menu="submit-hours"
+                                                class="bg-primary float-end py-1 btn  btn-xs rounded-xs text-capitalize   shadow-s ">
+                                                <span class="font-14 font-400 color-white"> Submit Hour </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="mb-2">
+                                    Donec lacinia efficitur venenatis. Interdum et malesuada fames ac ante ipsum
+                                    primis in faucibus.
+                                    Quisque et urna turpis.
+                                </p>
+                                <div class="text-start">
+                                    <span class="color-red-dark"><i class="fa fa-calendar pe-2"></i>Due:
+                                        23-june</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card card-style">
+                            <div class="card" data-card-height="250"
+                            style="height: 300px; background:linear-gradient(95deg, #559cf5, #0d6efd)">    
+                            <div class="card-bottom pb-3 pe-3 ps-3">
+                                <div class="row mb-0">
+                                    <div class="col-6 ">
+                                        <span class="color-white"><i class="fa fa-tag pe-2"></i>
+                                            UI Designer
+                                        </span>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <span class="color-white"><i class="fas fa-clock"></i> 10 Hours</span>
+                                    </div>
+                                    <!-- <div class="col-4 text-start">
+                                        <span class="color-white"><i
+                                                class="fa fa-calendar pe-2"></i>23-06-2022</span>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="bg-gradient rounded-0">
+                                <div class="card-center">
+                                    <h1 class="color-white text-center mb-0 scale-box">Visual Design</h1> 
+                                </div>
+                            </div>
+                        </div>
+                            <div class="content mt-n2">
+                                <div class="float-start">
+                                    <p class="text-warning font-600 mb-n1 invisible">High</p>
+                                    <a href="user-project-details.html"> <h1>Visual Design </h1></a>
+                                </div>
+                                <div class="float-end mt-2">
+                                    <a href="#"
+                                        class="icon icon-xs bg-theme color-theme shadow-xl rounded-xl ms-2"
+                                        id="submit-hour" data-bs-toggle="dropdown">
+                                        <i class="fas fa-ellipsis-v text-primary"></i>
+                                    </a>
+                                    <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2"
+                                        aria-labelledby="submit-hour">
+    
+                                        <div class="list-group list-custom-small ps-2 pe-2">
+                                            <a href="#" data-menu="review-modal">
+                                                <i
+                                                    class="fa fa-solid fa-circle-check text-primary shadow-0 mx-0"></i>
+                                                <span>Mark for review</span>
+                                            </a>
+                                            <a href="#" data-menu="submit-hours"
+                                                class="bg-primary float-end py-1 btn  btn-xs rounded-xs text-capitalize   shadow-s ">
+                                                <span class="font-14 font-400 color-white"> Submit Hour </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <p class="mb-2">
+                                    Donec lacinia efficitur venenatis. Interdum et malesuada fames ac ante ipsum
+                                    primis in faucibus.
+                                    Quisque et urna turpis.
+                                </p>
+                                <div class="text-start">
+                                    <span class="color-red-dark"><i class="fa fa-calendar pe-2"></i>Due:
+                                        23-june</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- notification modal -->
+
+        <div id="notification" class="menu menu-box-modal rounded-m p-4" data-menu-height="250" data-menu-width="350">
+
+            <div class="d-flex justify-content-between align-items-center w-100 ">
+                <h5 class="  font-16 font-500 text-primary">Notifications</h5>
+                <a href="" class="float-end d-inlie text-black text-underline"><u>Mark all as read</u></a>
+            </div>
+
+            <div class="  pb-0">
+                <div class="content m-0" id="tab-group-3">
+                    <div class="notification-tab border-bottom " data-highlight="activeBorder">
+                        <a href="#" class="no-effect text-black font-16 font-600" data-active data-bs-toggle="collapse"
+                            aria-expanded="true" data-bs-target="#tab-8">All</a>
+                        <!-- <a href="#" class="no-effect" data-bs-toggle="collapse" data-bs-target="#tab-9">two</a> -->
+                    </div>
+                    <div data-bs-parent="#tab-group-3" class="collapse show" id="tab-8">
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+
+                                <img src="../images/pictures/faces/1small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/2small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/3small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/4small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div data-bs-parent="#tab-group-3" class="collapse" id="tab-9">
+                        dfg
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="submit-hours" class="card bg-white card-style menu menu-box-modal rounded-m p-4" data-menu-height="340"
+            data-menu-width="350"> 
+
+            <form class="w-100">
+                <div class="input-style has-borders no-icon mb-4">
+                    <input type="date" value="2030-12-31" max="2030-01-01" min="2021-01-01"
+                        class="form-control validate-text" id="form6" placeholder="Phone">
+                    <label for="form6" class="color-highlight">Start Date</label>
+                    <i class="fa fa-check disabled valid me-4 pe-3 font-12 color-green-dark"></i>
+                    <i class="fa fa-check disabled invalid me-4 pe-3 font-12 color-red-dark"></i>
+                </div>
+                <div class="input-style has-borders no-icon validate-field mb-4">
+                    <input type="url" class="form-control validate-text" id="form44" placeholder="Hours you work">
+                    <label for="form44" class="color-highlight"> Hours you work</label>
+                    <i class="fa fa-times disabled invalid color-red-dark"></i>
+                    <i class="fa fa-check disabled valid color-green-dark"></i>
+                </div>
+                <div class="input-style has-borders no-icon mb-4">
+                    <textarea id="form7" placeholder="Description" style="height:65px;"></textarea>
+                    <label for="form7" class="color-highlight">Description</label>
+                    <em class="mt-n3">(required)</em>
+                </div>
+                <div class="d-flex justify-content-center align-items-center w-100 ">
+                    <a href="#"
+                        class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                        <span class="font-14 font-400"> Cancel</span>
+                    </a>
+                    <a href="#"
+                        class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                        <span class="font-14 font-400"> Submit</span>
+                    </a>
+                </div>
+            </form>
+
+
+
+
+        </div>
+
+        <div id="review-modal" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500"> Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#"
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#"
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-option-2" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500"> Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#"
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#"
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-main-sheet" class="menu menu-box-bottom rounded-0 rounded-m " data-menu-height="400"
+            data-menu-load="options.html" data-menu-height="500" data-menu-active="nav-pages">
+        </div>
+
+        <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../scripts/custom.js"></script>
+
+</body>
+
+</html>

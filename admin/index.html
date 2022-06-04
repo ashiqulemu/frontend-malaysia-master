@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>AppKit BootStrap</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../fonts/css/fontawesome-all.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../app/icons/icon-192x192.png" />
+</head>
+
+<body class="" data-highlight="highlight-red">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <!-- footer -->
+
+        <!-- <div id="footer-bar" class="footer-bar-6">
+            <a href="index-components.html"><i class="fa fa-layer-group"></i><span>Features</span></a>
+            <a href="index-pages.html"><i class="fa fa-file"></i><span>Pages</span></a>
+            <a href="index.html" class="circle-nav active-nav"><i class="fa fa-home"></i><span>Welcome</span></a>
+            <a href="index-projects.html"><i class="fa fa-image"></i><span>Projects</span></a>
+            <a href="#" data-menu="menu-main"><i class="fa fa-bars"></i><span>Menu</span></a>
+        </div> -->
+
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-main.html">
+        </div>
+
+        <div class=" py-3 d-flex justify-content-between align-items-center px-1  ">
+            <!-- <h1> Appkit </h1> -->
+            <div class="flex-fill">
+                <a href="#" class=" rounded-circle page-title-icon   bg-theme color-theme" data-menu="menu-main">
+                    <i class="fa fa-bars font-18"></i>
+                </a>
+            </div>
+
+            <div class="flex-fill d-flex justify-content-end">
+                <a href="#" id="header-3" data-bs-toggle="dropdown"
+                    class="  page-title-icon shadow-xl bg-theme color-theme">
+                    <i class="fa fa-plus"></i>
+                </a>
+
+                <div class="dropdown-menu bg-theme border-0 shadow-l rounded-s me-2 mt-2" aria-labelledby="header-3">
+
+                    <div class="list-group list-custom-small ps-2 pe-3">
+                        <a href="create-user.html">
+                            <i class="fas fa-user-plus text-primary"></i>
+                            <span>Create User</span>
+
+                        </a>
+                        <a href="create-project.html" class="border-0">
+                            <i class="fas fa-folder-plus text-primary"></i>
+                            <span>Create Project </span>
+
+                        </a>
+
+                    </div>
+                </div>
+
+                <a href="notifications.html" class=" page-title-icon shadow-xl bg-theme color-theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        class=" text-primary tw-align-bottom" role="img">
+                        <g fill="none">
+                            <g>
+                                <path fill="currentColor"
+                                    d="M12.338 2.01a6 6 0 005.274 7.977V10l2.141 4.008c.513.959.201 2.18-.696 2.728a1.778 1.778 0 01-.928.264H5.871C4.837 17 4 16.105 4 15c0-.348.085-.69.246-.992L6.388 10V8C6.388 4.686 8.9 2 12 2c.113 0 .226.004.338.01zM15 19a3 3 0 11-6 0h6z">
+                                </path>
+                                <circle cx="18" cy="4.25" r="4" fill="#FA3946"></circle>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="#" class="text-center page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main">
+                    <img src="../images/avatars/9xs.png" alt="" class="img-fluid rounded-circle">
+                </a>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="container-fluid mt-1">
+                <h3 class="font-24 font-700 mb-4">Admin Dashboard</h3>
+
+                <div class="row">
+                    <div class="col-4">
+                        <a href="user-list.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100">
+
+
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+
+                                    <p class="color-highlight font-600 mb-n1  font-16">User List </p>
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+
+                                </div>
+
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4 px-1">
+                        <a href="active-projects.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100">
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+                                    <p class="color-highlight font-600 mb-n1  font-16">Active Project</p>
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-4">
+                        <a href="completed-projects.html">
+                            <div class="card card-style mb-auto shadow-xl text-center mx-0 h-100">
+
+                                <div class="content d-flex flex-column h-100 justify-content-center align-items-center">
+
+                                    <p class="color-highlight font-600 mb-n1  font-16">Copmleted Project</p>
+
+                                    <h1 class="font-24 font-700 mb-0 pb-0 mt-2"> 30 </h1>
+
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row  mb-0 ">
+                    <h1 class="font-24 font-700 mb-4">Working Hours</h1>
+                    <div class="col-12">
+                        <table class="table table-borderless text-center rounded-sm shadow-l" style="overflow: hidden;">
+
+                            <thead>
+                                <tr class="bg-blue-dark">
+                                    <th scope="col" class="color-white py-3 font-14">User</th>
+                                    <th scope="col" class="color-white py-3 font-14">Role</th>
+                                    <th scope="col" class="color-white py-3 font-14">Project</th>
+                                    <th scope="col" class="color-white py-3 font-14">Hrs</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-menu="table-data-modal">
+                                    <th scope="row">
+                                        <div class="list-group list-custom-small">
+                                            <a href="#" class="border-0">
+                                                <img class='me-0' src="../images/avatars/9xs.png">
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle">UIUX</th>
+                                    <th class="align-middle">Otto</th>
+                                    <th class="align-middle">1:23</th>
+                                </tr>
+                                <tr  data-menu="table-data-modal">
+                                    <th scope="row">
+                                        <div class="list-group list-custom-small">
+                                            <a href="#" class="border-0">
+                                                <img class='me-0' src="../images/avatars/9xs.png">
+                                            </a>
+                                        </div>
+                                    </th>
+
+                                    <th class="align-middle">UIUX</th>
+                                    <th class="align-middle">Otto</th>
+                                    <th class="align-middle">1:23</th>
+                                </tr>
+                                <tr  data-menu="table-data-modal">
+                                    <th scope="row">
+                                        <div class="list-group list-custom-small">
+                                            <a href="#" class="border-0">
+                                                <img class='me-0' src="../images/avatars/9xs.png">
+                                            </a>
+                                        </div>
+                                    </th>
+                                    <th class="align-middle">UIUX</th>
+                                    <th class="align-middle">Otto</th>
+                                    <th class="align-middle">1:23</th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- notification modal -->
+
+        <div id="notification" class="menu menu-box-modal rounded-m p-4" data-menu-height="250" data-menu-width="350">
+
+            <div class="d-flex justify-content-between align-items-center w-100 ">
+                <h5 class="  font-16 font-500 text-primary">Notifications</h5>
+                <a href="" class="float-end d-inlie text-black text-underline"><u>Mark all as read</u></a>
+            </div>
+
+            <div class="  pb-0">
+                <div class="content m-0" id="tab-group-3">
+                    <div class="notification-tab border-bottom " data-highlight="activeBorder">
+                        <a href="#" class="no-effect text-black font-16 font-600" data-active data-bs-toggle="collapse"
+                            aria-expanded="true" data-bs-target="#tab-8">All</a>
+                        <!-- <a href="#" class="no-effect" data-bs-toggle="collapse" data-bs-target="#tab-9">two</a> -->
+                    </div>
+                    <div data-bs-parent="#tab-group-3" class="collapse show" id="tab-8">
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+
+                                <img src="../images/pictures/faces/1small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/2small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/3small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="row mt-3 mb-3 ">
+                            <div class="col-3 text-center">
+                                <img src="../images/pictures/faces/4small.png" alt="" class="rounded img-fluid">
+                            </div>
+                            <div class="col-9 d-flex align-items-center">
+                                <p>
+                                    <span class="font-12">You are added to a new project</span> <br>
+                                    <small class=" ">2h ago</small>
+
+                                </p>
+                            </div>
+                            <div class="row border-bottom mb-0 mx-auto">
+                                <div class="col-3"></div>
+                                <div class="col-9">
+                                    <a href="#"
+                                        class="btn btn-xxs px-1 float-end mb-3 rounded-s mt-2 bg-highlight font-13  font-700 shadow-s  ">
+                                        View Project
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div data-bs-parent="#tab-group-3" class="collapse" id="tab-9">
+                        dfg
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="table-data-modal" class="card card-style menu menu-box-modal rounded-m p-4" data-menu-height="230"
+            data-menu-width="320">
+            <h5 class="text-center font-15 font-500">View All Info</h5> 
+                <div class="content text-center"> 
+                    <img  src="../images/avatars/9xs.png" class=" mx-auto rounded-circle shadow" width="80">
+                    <div> 
+                        <p class="font-12 font-600 text-black my-2">
+                            <i class='pe-2 fas fa-laptop-code text-primary'></i> UI/UX</p> 
+                        <div class="row mb-0">
+                            <div class="col-6">
+                                <span class="text-black">
+                                    <i class="fas fa-tasks-alt text-primary"></i>
+                                     Project:
+                               </span> 
+                                <span class="text-primary">Otto</span>  
+                            </div>
+                            <div class="col-6">
+                                <i class="text-primary fas fa-clock pe-1"></i>
+                                <span class="text-black"> Hours: </span>    
+                                <span class="text-primary">1.23</span>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div> 
+        </div>
+
+        <div id="menu-option-1" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500"> Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#"
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#"
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div id="menu-option-2" class="menu menu-box-modal rounded-m p-4" data-menu-height="230" data-menu-width="350">
+            <h5 class="text-center font-16 font-500"> Mark for Review</h5>
+            <div class="input-style has-borders no-icon mb-4 mt-2">
+                <textarea style="height:85px;" placeholder="Add Note" class="bg-gray-light color-black"></textarea>
+            </div>
+            <div class="d-flex justify-content-center align-items-center w-100 ">
+                <a href="#"
+                    class=" mx-1 w-50 my-1  bg-danger text-white py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> No</span>
+                </a>
+                <a href="#"
+                    class="bg-primary mx-1 w-50 my-1  py-1 btn  btn-xs   rounded-xs text-capitalize   shadow-s ">
+                    <span class="font-14 font-400"> Yes</span>
+                </a>
+            </div>
+        </div>
+        <div id="menu-main-sheet" class="menu menu-box-bottom rounded-0 rounded-m " data-menu-height="400"
+            data-menu-load="options.html" data-menu-height="500" data-menu-active="nav-pages"></div>
+
+
+        <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../scripts/custom.js"></script>
+
+</body>
+
+</html>

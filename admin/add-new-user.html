@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <title>AppKit BootStrap</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../fonts/css/fontawesome-all.min.css" />
+    <link rel="manifest" href="_manifest.json" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../app/icons/icon-192x192.png" />
+</head>
+
+<body class="" data-highlight="highlight-red">
+    <div id="preloader">
+        <div class="spinner-border color-highlight" role="status"></div>
+    </div>
+
+    <div id="page">
+
+        <div id="menu-main" class="menu menu-box-left rounded-0" data-menu-width="280" data-menu-active="nav-welcome"
+            data-menu-load="menu-main.html">
+        </div>
+        <div class=" py-3 d-flex justify-content-between align-items-center px-3  ">
+            <!-- <h1> Appkit </h1> -->
+            <div class="flex-fill d-flex align-items-center">
+                <a href="active-project-list-details.html" class="page-title-icon bg-theme ">
+                    <i class="fa-solid text-primary fa-arrow-left font-18"></i>
+                </a>
+                <span class=" font-18 font-600 text-black">Add User</span>
+            </div> 
+            <div class="flex-fill d-flex justify-content-end"> </div>
+        </div>
+
+        <div class="page-content pb-0">
+            
+            <div class="container-fluid pt-3"> 
+                <div class="col-12">
+                    <div class="card card-style">
+                        <div class="content">
+                            <div class="search-box mb-4 search-dark shadow-xl border-0 bg-theme rounded-sm bottom-0">
+                                <i class="fa fa-search"></i>
+                                <input type="text" class="border-0" placeholder="User name" data-search="">
+                            </div>
+                            <div class="input-style has-borders no-icon mb-4">
+                                <label for="form5" class="color-highlight">User Skills</label>
+                                <select id="form5"> 
+                                    <option value="iOS">UI Designer</option> 
+                                    <option value="iOS">UI Designer</option> 
+                                    <option value="iOS">UI Designer</option> 
+                                </select>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                                <i class="fa fa-check disabled valid color-green-dark"></i>
+                                <i class="fa fa-check disabled invalid color-red-dark"></i>
+                                <em></em>
+                            </div>
+                            <div class="d-flex justify-content-between mb-4">
+                                <div class="form-check icon-check">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio1">
+                                    <label class="form-check-label" for="radio1" data-menu="high-priority">High Priority</label>
+                                    <i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
+                                    <i class="icon-check-2 fa fa-check-circle font-16 color-highlight"></i>
+                                </div>
+                                <div class="form-check icon-check">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" value="" id="radio2">
+                                    <label class="form-check-label" for="radio2">Test Job</label>
+                                    <i class="icon-check-1 fa fa-circle color-gray-dark font-16"></i>
+                                    <i class="icon-check-2 fa fa-check-circle font-16 color-highlight"></i>
+                                </div>
+                            </div>
+                            <div class="row mb-0">                         
+                                 <div class="col-6">
+                                    <a href="#" class="btn btn-border btn-sm btn-full mb-3 rounded text-uppercase font-700 border-red-dark color-red-light bg-theme">Cancel</a>
+                                 </div>
+                                 <div class="col-6">
+                                    <a href="#" class="btn btn-sm btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s bg-primary">Create</a>
+                                 </div>
+                             </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div id="high-priority"
+                class="menu menu-box-modal rounded-m p-4 d-flex justify-content-center align-items-center"
+                data-menu-height="300" data-menu-width="280">
+                <div class="row mb-0 ">
+                    <P class="text-center text-secondary font-12 mb-2">
+                        This user already have high priority on project: Kitchen UI/UX
+                    </P>
+                    <p  class="text-center text-black font-15 font-500">Do you want to change priority for this project ?</p>
+                    <div class="col-6">
+                        <a href="#" class="text-danger border-red-light btn-border btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                         ">
+                            No
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="" class=" btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                        bg-primary">
+                            Yes
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="create-project"
+                class="menu menu-box-modal rounded-m p-4 d-flex justify-content-center align-items-center"
+                data-menu-height="200" data-menu-width="280">
+                <div class="row mb-0 ">
+                    <P class="text-center text-black font-16">
+                        Your project has been created successfull
+                    </P>
+                    <div class="col-6">
+                        <a href="#" class="text-primary border-blue-dark btn-border btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                         ">
+                            ok
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="project-list.html" class=" btn btn-s btn-full mb-3 rounded-xs text-uppercase font-700 shadow-s
+                        bg-primary">
+                            View
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="../scripts/bootstrap.min.js">
+        </script>
+        <script type="text/javascript" src="../scripts/custom.js"></script>
+
+</body>
+
+</html>
